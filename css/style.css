@@ -1,0 +1,1307 @@
+body {
+    margin: 0;
+
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    color: #344C63;
+    background: #FFFFFF;
+    overflow-x: hidden;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+*,
+*::after,
+*::before {
+   box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .2) inset;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c0c0c0;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b3b2b2;
+}
+
+/* Container */
+
+.container {
+    width: 100%;
+    max-width: 1216px;
+    margin: 0 auto;
+}
+
+/* Header */
+
+.header {
+    background: #7A79F0;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.nav {
+    align-items: center;
+    margin-top: -25px;
+}
+
+.nav__item {
+    margin-left: 50px;
+    position: relative;
+
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+}
+
+.nav__item:nth-child(6) {
+    margin-left: 80px;
+}
+
+.nav__item::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: #FFFFFF;
+    transition: .3s;
+}
+
+.nav__item:hover::after {
+    width: 100%;
+}
+
+.whatsapp, .telegram {
+    margin-bottom: -10px;
+}
+
+.header__rec {
+    height: 1px;
+    width: 100%;
+
+    background: #FFFFFF;
+}
+
+/* Intro */
+
+.intro {
+    background: #7A79F0;
+}
+
+.intro__inner {
+    display: flex;
+    padding-top: 30px;
+    justify-content: space-between;
+}
+
+.intro__text {
+    width: 50%;
+    padding-top: 140px;
+}
+
+.title {
+    margin-bottom: 20px;
+
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 160%;
+    
+    color: #FFFFFF;
+}
+
+.subtitle {
+    margin-bottom: 30px;
+    width: 490px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 180%;
+
+    color: #FFFFFF;
+}
+
+.intro__btns {
+    display: flex;
+}
+
+.intro__btn, .intro__btn-1 {
+    display: block;
+    padding: 12px 50px;
+    
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 180%;
+    text-decoration: none;
+
+    background-color: #FFFFFF;
+    color: #7A79F0;
+    border-radius: 15px;
+}
+
+.intro__main {
+    padding-top: 70px;
+    margin-bottom: -4px;
+    margin-right: 50px;
+}
+
+.opensea {
+    max-width: 36px;
+    margin-right: 9px;
+}
+
+.twitter, .discord, .tg {
+    max-width: 50px;
+    margin-top: 10px;
+}
+
+.twitter, .discord {
+    margin-right: 20px;
+}
+
+.intro__btns {
+    max-width: 362px;
+    margin-bottom: 10px;
+}
+
+.intro__btn-1 {
+    display: flex;
+    padding: 12px 30px;
+}
+
+.intro__btn-1 {
+    width: 50%;
+    margin-right: 10px;
+}
+
+.intro__btn {
+    max-width: 362px;
+    display: flex;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+
+.intro__btn:hover, .intro__btn-1:hover {
+    box-shadow: 0px 0px 23px rgba(255, 255, 255, 0.57);
+    transition: 0.5s;
+}
+
+.intro__main {
+    margin-top: -50px;
+}
+
+.blur {
+    position: absolute;
+    top: -200px;  
+    width: 610px;
+    height: 515px;
+
+    z-index: -10;
+
+    background: linear-gradient(92.99deg, #C9F8FE 0%, #2AB1DE 100%);
+    filter: blur(238.063px);
+    transform: rotate(-90deg);
+}
+
+/* About */
+
+.about {
+    margin-top: 100px;
+}
+
+.about__inner {
+    display: flex;
+    align-items: center; 
+}
+ 
+.about__text {
+    width: 50%;
+    margin-left: 125px;
+}
+
+.about__title {
+    margin-bottom: 25px;
+
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 160%;
+
+    color: #344C63;
+}
+
+.about__paragraph {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 190%;
+
+    color: #344C63;
+}
+
+.about__rec {
+    width: 300px;
+    height: 1px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    background: #C4C4C4;
+}
+
+.about__btn {
+    display: flex;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 180%;
+    text-decoration: none;
+
+    color: #344C63;
+}
+
+.about__btn p {
+    margin-right: 10px;
+}
+
+/* Slider */
+
+.images {
+    margin-top: 90px;
+}
+
+.swiper-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Project */
+
+.project {
+    margin-top: 120px;
+}
+
+.project__item {
+    display: flex;
+    margin-top: 95px;
+}
+
+.project__item:first-child {
+    margin-top: 0;
+}
+
+.project__text {
+    margin-left: 65px;
+}
+
+.project__title {
+    margin-bottom: 20px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 190%;
+
+    color: #344C63;
+}
+
+.project__subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 190%;
+
+    color: #344C63;
+}
+
+/* NFT */
+
+.nft {
+    margin-top: 120px;
+}
+
+.nft__title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 160%;
+
+    color: #344C63;
+}
+
+.nft__inner {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nft__item {
+    width: 25%;
+    margin-bottom: 30px;
+}
+
+.nft__text {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.nft__name {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 190%;
+}
+
+.nft__rec {
+    width: 4px;
+    height: 4px;
+    margin-left: 17px;
+    margin-right: 17px;
+    
+    border-radius: 20px;
+    background: #CFCFCF;
+}
+
+.nft__position {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 190%;
+}
+
+/* Faq */
+
+.faq {
+    margin-top: 120px;
+}
+
+.faq__item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+.faq__quest {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 190%;
+
+}
+
+.faq__item:first-child {
+    margin-top: 60px;
+}
+
+.faq__rec {
+    width: 100%;
+    height: 1px;
+
+    background: #CFCFCF;
+}
+
+.faq__plus-1, .faq__plus-2, .faq__plus-3, .faq__plus-4, .faq__plus-5, .faq__plus-6  {
+    cursor: pointer;
+}
+
+.faq__answer-1, .faq__answer-2, .faq__answer-3, .faq__answer-4, .faq__answer-5, .faq__plus-6 {
+    max-height: 0;
+    overflow: hidden;
+    max-width: 1100px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+
+    line-height: 190%;
+    font-size: 18px;
+
+    transition: max-height 0.5s ease;
+}
+
+.faq__answer-1.active {
+    max-height: 300px;
+
+    transition: max-height 1s ease;
+}
+
+.faq__answer-2.active {
+    max-height: 300px;
+
+    transition: max-height 1s ease;
+}
+
+.faq__answer-3.active {
+    max-height: 300px;
+
+    transition: max-height 1s ease;
+}
+
+.faq__answer-4.active {
+    max-height: 300px;
+
+    transition: max-height 1s ease;
+}
+
+.faq__answer-5.active {
+    max-height: 300px;
+
+    transition: max-height 1s ease;
+}
+
+.faq__answer-6.active {
+    max-height: 300px;
+
+    transition: max-height 1s ease;
+}
+
+.faq__plus-1.active, .faq__plus-2.active, .faq__plus-3.active, .faq__plus-4.active, .faq__plus-5.active, .faq__plus-6.active {
+    transform: rotate(45deg);
+    transition: 0.5s;
+}
+
+.faq__plus-1, .faq__plus-2, .faq__plus-3, .faq__plus-4, .faq__plus-5, .faq__plus-6 {
+    transition: 0.5s;
+}
+
+.intro__btn__inner {
+    display: flex;
+}
+
+/* Footer */
+
+.footer {
+    width: 100%;
+    margin-top: 90px;
+
+    background: #7A79F0;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer__item {
+    display: flex;
+}
+
+.copyright {
+    width: 400px;
+    margin-left: 30px;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 180%;
+
+    color: #FFFFFF;
+}
+
+.footer__img {
+    display: block;
+    margin-right: 40px;
+}
+
+.footer__img:nth-child(2) {
+    margin-right: 0;
+}
+
+.footer__text {
+    margin-right: 20px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 180%;
+    text-decoration: none;
+
+    color: #FFFFFF;
+}
+
+.footer__link {
+    display: flex; 
+    
+    text-decoration: none;
+}
+
+.footer__link:first-child {
+    margin-right: 20px;
+}
+
+.intro__main-adaptive {
+    display: none;
+}
+
+.progress__inner-adaptive {
+    display: none;
+}
+
+.faq__answer-1 {
+    line-height: 190%;
+}
+
+.whatsapp {
+    margin-left: 50px;
+}
+
+.footer__logo {
+    height: 30px;
+}
+
+.opensea {
+    max-height: 36px;
+}
+
+.twitter, .discord, .tg {
+    max-height: 45px;
+}
+
+.footer__inner {
+    display: flex;
+    align-items: center;
+}
+
+.footer__btns {
+    display: flex;
+    align-items: center;
+}
+
+
+@media (max-width: 1248px) {
+
+    .container {
+        max-width: 960px;
+    }
+
+    #nav__item  {
+        display: none;
+    }
+
+    .intro__text {
+        width: 70%;
+        padding-top: 80px;
+    }
+    
+    .about__text {
+        margin-left: 50px;
+    }
+
+    .about {
+        margin-top: 70px;
+    }
+
+    .images {
+        margin-top: 60px;
+    }
+
+    .project  {
+        margin-top: 70px;
+    }
+
+    .progress__rec {
+        position: absolute;
+    }
+    
+    .progress__left__item, .progress__text__left {
+        width: 410px;
+    }
+
+    .progress__right__item, .progress__text__right {
+        width: 410px;
+    }
+
+    .nft {
+        margin-top: 80px;
+    }
+
+    .nft__inner {
+        margin-left: -20px;
+    }
+
+    .nft__item {
+        width: 22.9%;
+        margin-left: 20px;
+    }
+
+    .nft__name, .nft__position {
+        font-size: 18px;
+    }
+
+    .faq {
+        margin-top: 100px;
+    }
+
+    .footer_link:first-child {
+        margin-right: 20px;
+    }
+
+    .nav {
+        margin-top: -10px;
+    }
+
+    .intro__img {
+        margin-top: -30px;
+    }
+
+    .subtitle {
+        margin-bottom: 25px;
+    }
+
+    .about__img {
+        width: 420px;
+    }
+
+    .about__inner {
+        justify-content: space-between;
+    }
+
+    .footer {
+        margin-top: 60px;
+    }
+
+    .faq__answer-1, .faq__answer-2, .faq__answer-3, .faq__answer-4, .faq__answer-5, .faq__plus-6 {
+        width: 920px;
+    }
+}
+
+@media (max-width: 1060px) {
+
+    .container {
+        max-width: 728px;
+    }
+
+    .header__inner {
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+
+    .nav__item {
+        margin-left: 50px;
+    }
+
+    .nav__item:nth-child(6) {
+        margin-left: 40px;
+    }
+
+    .intro__inner {
+        display: flex;
+        padding-top: 10px
+    }
+
+    .intro__text {
+        width: 70%;
+        padding-top: 70px;
+    }
+
+    .title {
+        margin-bottom: 10px;
+    }
+
+    .subtitle {
+        width: 320px;
+        margin-bottom: 20px;
+    }
+
+    .intro__main {
+        padding-top: 30px;
+        margin-right: 0;
+    }
+
+    .intro__btn:last-child {
+        margin-top: 15px;  
+        margin-left: 0;
+    }
+
+    .intro__btn {
+        width: 230px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    
+    .about__img {
+        max-width: 25%;
+    }
+
+    .about__paragraph {
+        font-size: 16px;
+    }
+
+    .about__title {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+
+    .about__text {
+        margin-left: 50px;
+    }
+
+    .about__img {
+        max-width: 46%;
+    }
+
+    .images {
+        margin-top: 40px;
+    }
+
+    .project {
+        margin-top: 50px;
+    }
+
+    .project__subtitle {
+        font-size: 16px;
+    }
+
+    .project__text {
+        margin-left: 40px;
+    }
+
+    .project__title {
+        margin-bottom: 5px;
+    }
+
+    .project__item {
+        margin-top: 50px;
+    }
+    
+    .project__item:last-child {
+        margin-top: 60px;
+    }
+
+    .progress {
+        margin-top: 80px;
+    }
+
+    .progress__inner {
+        margin-top: 45px;
+    }
+
+    .progress__date__left, .progress__paragraph__left, .progress__text__left {
+        font-size: 16px;
+    }
+
+    .progress__date__right, .progress__paragraph__right, .progress__text__right {
+        font-size: 16px;
+    }
+
+    .progress__left__item, .progress__text__left {
+        width: 310px;
+    }
+
+    .progress__right__item, .progress__text__right {
+        width: 310px;
+    }
+
+    .progress__left__item {
+        margin-bottom: 50px;
+    }
+
+    .progress__right__item:nth-child(1) {
+        margin-bottom: 60px;
+    }
+
+    .progress__right__item:nth-child(2) {
+        margin-bottom: 40px;
+    }
+
+    .progress__right__item:nth-child(3) {
+        margin-bottom: 60px;
+    }
+
+    .progress__rec {
+        height: 945px;
+    }
+
+    .nft__item {
+        width: 22.3%;
+        margin-left: 20px;
+    }
+
+    .about__inner {
+        justify-content: left;
+    }
+
+    .faq {
+        margin-top: 40px;
+    }
+
+    .faq__item:first-child {
+        margin-top: 40px;
+    }
+    
+    .footer {
+        margin-top: 50px;
+    }
+
+    .footer__inner {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
+    .copyright {
+        width: 250px;
+        padding-top: 5px;
+
+        font-size: 16px;
+    }
+
+    .footer__img:first-child {
+        margin-right: 15px;
+    }
+
+    .intro__img {
+        margin-top: 15px;
+    }
+
+    .intro__btn {
+        width: 280px;
+    }
+
+    .intro__btn {
+        padding: 12px 31px;
+    }
+
+    .copyright {
+        display: none;
+    }
+
+    .footer__logo {
+        height: 30px;
+        margin-top: 5px;
+    }
+
+    .intro__main {
+        margin-bottom: -4px;
+    }
+    
+    #nav__item {
+        display: block;
+    }
+
+    .nav {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .intro__btn {
+        width: 335px;
+    }
+
+    .title {
+        font-size: 35px;
+    }
+    
+    .subtitle {
+        font-size: 17px;
+    }
+
+    .about {
+        margin-top: 40px;
+    }
+
+    .faq__answer-1, .faq__answer-2, .faq__answer-3, .faq__answer-4, .faq__answer-5, .faq__plus-6 {
+        width: 680px;
+    }
+
+    .footer__inner {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+}
+
+@media(max-width: 768px) {
+
+    .container {
+        max-width: 440px;
+    }
+
+    .nav__item.link {
+        display: none;
+    }
+    
+    .intro__inner {
+        padding-top: 30px;
+        display: block;
+    }
+
+    .intro__main {
+        display: none;
+    }
+
+    .intro__main-adaptive {
+        display: block;
+    }
+
+    .header__inner {
+        justify-content: center;
+    }
+
+    .subtitle {
+        width: auto;
+        text-align: center;
+    }
+
+    .intro__main-adaptive {
+        margin-left: 30px;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .intro__inner {
+        justify-content: center;
+    }
+
+    .images {
+        margin-top: 30px;
+    }
+
+    .intro__text {
+        width: 100%;
+    }
+
+    .subtitle {
+        text-align: center;
+    }
+
+    .intro__btns {
+        display: block; 
+        padding-bottom: 40px;
+
+        text-align: center;
+    }
+
+    .intro__btn {
+        width: 100%;
+
+        text-align:center;
+    }
+
+    .about__img {
+        display: none;
+    }
+
+    .about__text {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .about__btn {
+        font-size: 16px;
+    }
+    
+    .project__img {
+        max-height: 150px;
+    }
+
+    .project__title {
+        font-size: 18px;
+    }
+
+    .project__subtitle {
+        font-size: 14px;
+    }
+
+    .project__text {
+        margin-left: 23px;
+    }
+
+    .max-height {
+        max-width: 150px;
+    }
+
+    .project__text.adaptive {
+        margin-left: 5px;
+    }
+
+    .nft__text {
+        margin-top: 0;
+    }
+
+    .project__title {
+        margin-bottom: 5px;
+    }
+
+    .project__item {
+        margin-top: 30px;
+    }
+
+    .nft {
+        margin-top: 30px;
+    }
+    
+    .nft__title {
+        font-size: 25px;
+    }
+
+    .nft__inner {
+        margin-top: 25px;
+    }
+
+    .nft__position {
+        display: none;
+    }
+
+    .nft__rec {
+        display: none;
+    }
+    
+    .nft__item {
+        width: 28.9%;
+        margin-left: 20px;
+    }
+
+    .faq__item:first-child {
+        margin-top: 40px;
+    }
+
+    .faq__answer-1, .faq__answer-2, .faq__answer-3, .faq__answer-4, .faq__answer-5 {
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    .copyright {
+        display: none;
+    }
+
+    .footer__logo {
+        max-height: 28px;
+        margin-top: 5px;
+    }
+
+    .faq {
+        margin-top: 40px;
+    }
+
+    .faq__quest {
+        width: 315px;
+    }
+
+    .intro__btn-1 {
+        max-width: 440px;
+    }
+
+    .intro__btns {
+        justify-content: center;
+    }
+
+    .intro__btn-1, .intro__btn {
+        max-width: 440px;
+        width: 100%;
+
+        text-align: center;
+    }
+    
+    .intro__btn-1:first-child {
+        margin-bottom: 10px;
+    }
+
+    .subtitle {
+        margin-bottom: 25px;
+    }
+
+    .footer__inner {
+        justify-content: left;
+    }
+
+    .intro__btn__inner {
+        padding-left: 53px;
+    }
+
+    .intro__btns {
+        display: flex;
+        width: auto;
+        max-width: auto;
+        margin-left: 15px;
+    }
+
+    #btn-2, #btn-1 {
+        margin-left: 0;
+    }
+    
+    .intro__text {
+        margin-top: -60px;
+    }
+    
+    .whatsapp {
+        margin-left: 50px;
+    }
+
+    .project__item {
+        align-items: center;
+    }
+
+    .project__item:last-child {
+        margin-top: 30px;
+    }
+
+    .project__img {
+        width: 120px;
+    }
+
+    .project__text.adaptive {
+        margin-left: 23px;
+    }
+
+    .faq {
+        margin-top: 50px;
+    }
+
+    .faq__answer-1, .faq__answer-2, .faq__answer-3, .faq__answer-4, .faq__answer-5, .faq__plus-6 {
+        width: 400px;
+
+        font-size: 15px;
+    }
+
+    .footer__inner {
+        justify-content: space-between;
+    }
+
+    .footer__logo {
+        height: 25px;
+    }
+
+    .faq__item  {
+        margin-top: 25px;
+    }
+
+    .faq__plus-1, .faq__plus-3, .faq__plus-4, .faq__plus-5, .faq__plus-6 {
+        height: 35px;
+    }
+
+    .footer {
+        margin-top: 30px;
+    }
+
+    .footer__inner {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .about__paragraph {
+        font-size: 15px;
+    }
+
+}
+
+@media(max-width: 480px) {
+
+    .container {
+        max-width: 360px;
+    }
+
+    .project__item {
+        display: block;
+    }
+
+    .project__text {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .project__img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .project__title, .project__subtitle {
+        text-align: center;
+    }
+
+    .intro__main-adaptive {
+        margin-left: -10px;
+    }
+
+    .project__img {
+        width: 140px;
+    }
+
+    .faq__quest {
+        width: 225px;
+    }
+    
+    .footer__text {
+        font-size: 14px;
+    }
+    
+    .nft__item {
+        width: 44.7%;
+    }
+
+    .faq__quest {
+        font-size: 16px;
+    }
+
+    .footer {
+        margin-top: 40px;
+    }
+
+    .footer__inner {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .footer__text {
+        padding-top: 5px;
+    }
+
+    .intro__btn__inner {
+        padding-left: 20px;
+    }
+
+    .intro__btns {
+        margin-left: -10px;
+    }
+
+    .twitter, .discord {
+        margin-right: 10px;
+    }
+
+    .footer__logo {
+        height: 21px;
+    }
+
+    .faq__answer-1, .faq__answer-2, .faq__answer-3, .faq__answer-4, .faq__answer-5, .faq__plus-6 {
+        width: 340px;
+    }
+
+    .project__text.adaptive {
+        margin-left: 0;
+    }
+
+}
